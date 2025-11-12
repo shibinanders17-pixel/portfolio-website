@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 120px 40px;
+        gap:10px 15px;
+       }
+        .first{
+            background:orange;
+            grid-column: span 3;
+        }
+        .second{
+            background:green
+        }
+        .third{
+            background:pink;
+            grid-column: span 2;
+        }
+        .fourth{
+            background:gray;
+            grid-column :span 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    <div class="first"> Header</div>
+    <div class="second"> Sidebar </div>
+    <div class="third"> Main Content </div>
+    <div class="fourth"> Footer</div>
+    </div>
+
+
+
+    </div>
+</body>
+</html>

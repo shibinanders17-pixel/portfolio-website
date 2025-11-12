@@ -1,0 +1,140 @@
+body{
+    margin:0px;
+    background-color:#fcf5eb;
+}
+.main-navbar{
+    background:transparent;
+    height:70px;
+    width:100%;
+    position:sticky;
+    top:20px;
+    z-index:2;
+}
+
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 35px;
+}
+.navlinks{
+    font-size:15px;
+    list-style-type:none;
+    display:flex;
+    gap:45px;
+}
+.navlinks a{
+    font-family:arial;
+    text-decoration:none;
+    color:black;
+}
+.navlinks a:hover{
+    text-decoration:underline rgb(8, 139, 8);
+}
+.button{
+    width:100px;
+    border-radius:25px;
+    padding:17px;
+    position:relative;
+}
+.first{
+    right:-49px;
+    background:white;
+}
+.second{
+    background:rgb(30, 203, 30);
+}
+.third{
+    left:265px;
+    top:440px;
+    background:white
+}
+.fourth{
+    left:105px;
+    top:385px;
+    background:rgb(30, 192, 30)
+
+}
+
+.first:hover{
+    background-color:black;
+    color:white;
+}
+.third:hover{
+    background-color:black;
+    color:white;
+}
+.second:hover{
+    background-color:black;
+    color:white;
+}
+.fourth:hover{
+    background-color:black;
+    color:white;
+}
+.bgimage{
+    border:1px solid white;
+    border-radius:50px;
+    position:absolute;
+    left:20px;
+}
+
+.message{
+    position:absolute;
+    right:100px;
+    top:110px;
+}
+.heart{
+    position:absolute;
+    right:110px;
+    top:140px;
+}
+.voice-message{
+    position:absolute;
+    right:60px;
+    top:245px
+}
+.photo{
+    position:absolute;
+    right:175px;
+    top:310px;
+}
+.heading{
+    position:absolute;
+    left:100px;
+    top:200px;
+}
+p{
+    color:white;
+    font-size:15px;
+    position:absolute;
+    left:105px;
+    top:410px;
+
+}
+.symbol{
+    position:absolute;
+    top:40px;
+    right:46px
+}
+.heart1{
+    position:absolute;
+    top:130px;
+    right:190px;
+}
+.symbol2{
+    position:absolute;
+    left:195px;
+    top:548px;
+}
+.reply{
+    position:absolute;
+    top:540px;
+    right:70px
+}
+.emoji{
+    position:absolute;
+    right:85px;
+    top:470px;
+}

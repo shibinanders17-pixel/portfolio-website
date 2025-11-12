@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="box1">
+    <input id="box2"> <br>
+    <button onclick="cal()"> Add </button>
+    <h3 id="result"> Result</h3>
+    <script>
+        var firstbox = document.getElementById("box1")
+        var secondbox = document.getElementById("box2")
+        var result = document.getElementById("result")
+
+        function cal() {
+            var firstboxvalue = Number(firstbox.value)
+            var secondboxvalue = Number(secondbox.value)
+            total = firstboxvalue + secondboxvalue
+            result.textContent = total
+
+        }
+    </script>
+</body>
+
+</html>

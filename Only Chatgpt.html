@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shibin Tharthees — Portfolio</title>
+
+  <!-- Simple internal CSS -->
+  <style>
+    :root{
+      --accent: #0b84ff;
+      --bg: #f7f9fc;
+      --text: #222;
+      --muted: #555;
+      --card: #ffffff;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.5;padding:20px;}
+
+    /* Page wrapper */
+    .container{max-width:1000px;margin:0 auto;background:transparent;padding:18px;}
+
+    /* Header / Nav */
+    header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px;}
+    .brand{display:flex;align-items:center;gap:12px;}
+    .logo{width:52px;height:52px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;box-shadow:0 6px 18px rgba(11,132,255,0.12);}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600;}
+    nav a:hover{color:var(--text);}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:14px;align-items:center;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04);margin-bottom:18px;}
+    .hero-left h1{font-size:28px;margin-bottom:8px;}
+    .hero-left p{color:var(--muted);}
+
+    .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:600;}
+    .btn.secondary{background:transparent;color:var(--accent);border:2px solid var(--accent);}
+
+    /* Sections */
+    section{margin-bottom:18px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+
+    /* Card */
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,0.04);}
+    .card h3{margin-bottom:8px;}
+    .card p{color:var(--muted);font-size:15px}
+
+    /* Projects */
+    .projects .project{border-radius:8px;padding:12px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef5ff;}
+    .project .tags{margin-top:8px;font-size:13px;color:var(--muted);}
+
+    /* Contact form simple styles */
+    form{display:grid;gap:10px;}
+    input[type="text"], input[type="email"], textarea{
+      padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px;width:100%;
+    }
+    textarea{min-height:110px;resize:vertical;}
+    .row{display:flex;gap:8px;}
+    .row .col{flex:1;}
+
+    footer{text-align:center;color:var(--muted);font-size:14px;padding:6px;margin-top:10px;}
+
+    /* Responsive tweaks */
+    @media(min-width:800px){
+      .hero{grid-template-columns:1fr 300px;}
+      .hero-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- HEADER --> 
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <div style="font-weight:700">Shibin Tharthees</div>
+          <div style="font-size:13px;color:var(--muted)">Web enthusiast • Learner</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Hi — I'm Shibin</h1>
+        <p>I like building small web projects and learning new frontend skills. Currently exploring HTML, CSS and VS Code workflow.</p>
+        <div style="margin-top:12px;">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn secondary" href="#contact" style="margin-left:8px">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card" style="text-align:center;">
+          <div style="font-weight:700;font-size:18px">Quick Info</div>
+          <div style="color:var(--muted);margin-top:8px">From: Tamilnadu, India</div>
+          <div style="margin-top:8px;color:var(--muted)">Education: 12th</div>
+        </div>
+        <div class="card" style="margin-top:12px;text-align:center;">
+          <div style="font-weight:700">Skills</div>
+          <div style="color:var(--muted);margin-top:8px">HTML • CSS • VS Code • Willing to learn JS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2 style="margin-bottom:8px">About Me</h2>
+      <p style="color:var(--muted)">
+        I am passionate about web development. I practice HTML and CSS daily, build small pages and improve step-by-step.
+        I believe consistent effort will help me grow. (Your short bio / story — edit this.)
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 style="margin-bottom:10px">Projects</h2>
+      <div class="grid projects">
+        <div class="card project">
+          <h3>Personal Intro Page</h3>
+          <p>A small single-page HTML site with About, Links and Contact. (This can be your <code>myself.html</code>!)</p>
+          <div class="tags">HTML • CSS</div>
+          <div style="margin-top:10px"><a href="#" class="btn">View</a></div>
+        </div>
+
+        <div class="card project">
+          <h3>Image & List Demo</h3>
+          <p>Simple page showing images, lists and semantic tags. Good for learning media tags.</p>
+          <div class="tags">HTML • Images</div>
+          <div style="margin-top:10px"><a href="#" class="btn">View</a></div>
+        </div>
+
+        <div class="card project">
+          <h3>Contact Form Demo</h3>
+          <p>A basic contact form (frontend only). Later you can connect it to backend or form service.</p>
+          <div class="tags">HTML • Forms</div>
+          <div style="margin-top:10px"><a href="#" class="btn">View</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card" style="margin-top:12px;">
+      <h2 style="margin-bottom:8px">Contact</h2>
+      <p style="color:var(--muted);margin-bottom:8px">Try this demo form — it opens your email (mailto). For real projects use a backend or service later.</p>
+
+      <!-- Notice: frontend-only mailto demo -->
+      <form onsubmit="mailtoSend(event)">
+        <div class="row">
+          <div class="col"><input type="text" id="name" placeholder="Your name" required></div>
+          <div class="col"><input type="email" id="email" placeholder="Your email" required></div>
+        </div>
+        <textarea id="message" placeholder="Your message..." required></textarea>
+        <div style="display:flex;gap:8px;justify-content:flex-end;">
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn secondary" onclick="clearForm()">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      © 2025 Shibin Tharthees — Built with HTML & CSS • Open in VS Code → Live Server
+    </footer>
+  </div>
+
+  <!-- Simple JS for mailto demo (frontend only) -->
+  <script>
+    function mailtoSend(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\n' + message);
+      // open default mail client
+      window.location.href = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+    }
+    function clearForm(){
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+</body>
+</html>

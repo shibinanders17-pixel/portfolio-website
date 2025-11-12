@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="test"> Name </h1>
+    <button id="first" onclick="modify(event)"> Shibin</button>
+    <button id="second" onclick="modify(event)"> Guru</button>
+    <button id="third" onclick="modify(event)"> Sheik</button>
+    <script>
+        var text = document.getElementById("test")
+
+
+        function modify(event) {
+           test.textContent = event.target.textContent
+        }
+        
+        
+    </script>
+</body>
+
+</html>

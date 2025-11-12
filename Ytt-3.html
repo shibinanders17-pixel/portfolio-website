@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="modify(event)"> One </h1>
+    <h1 onclick="modify(event)"> Two</h1>
+    <h1 onclick="modify(event)"> Three</h1>
+    
+    <script>
+        
+        function modify(event) {
+         event.target.remove()
+        }
+    </script>
+</body> 
+
+</html>
